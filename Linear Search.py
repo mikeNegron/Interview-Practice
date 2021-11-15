@@ -1,10 +1,13 @@
-example_array = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+def main():
+    example_array = [x for x in range(10,20)]
 
-user_input = 11
+    user_input = 11
 
-for i, k in enumerate(example_array):
-    if user_input is k:
-        print(i)
+    for index, value in enumerate(example_array):
+        
+        if value is user_input:
+            print(f'Value: {user_input}\nIndex: {index}')
 
-#i is the index
-#k is the integer value in the list
+
+if __name__ == "__main__":
+    main()
