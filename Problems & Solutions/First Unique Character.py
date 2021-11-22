@@ -7,8 +7,8 @@ def first_unique(s: str) -> int:
                 hashmap[val] = 1
             else: hashmap[val] += 1
 
-        for i in hashmap:
-            if hashmap[i] == 1: return s.index(i)
+        for idx, i in enumerate(s):
+            if hashmap[i] == 1: return idx
 
     else: return -1
 
