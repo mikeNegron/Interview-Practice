@@ -17,7 +17,12 @@ def merge_intervals(intervals: list[list[int]]) -> list[list[int]]:
     return results
 
 def main():
-    test1 = []
+    #Output should be [[1,6],[8,10],[15,18]]
+    test = [[1,3],[2,6],[8,10],[15,18]]
+
+    result = merge_intervals(test)
+
+    print(f'The non-overlapping intervals are: {result}')
 
 if __name__ == '__main__':
     main()
